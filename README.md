@@ -2,7 +2,7 @@
 Digital watermarking is technique of embedding data into digital forms such as image, video & audio data which helps in identifying the ownership of the data. This technique is useful for copyright protection, tamper resistance, theft-intimidation etc. and it should be fixed in such a way that naked eye cannot differentiate it, as growth of technologies in the digital side is becoming wider and wider chances of clone copies keep on increasing. We have tried to implement an algorithm for black and white (binary) digital image watermarking technique based on discrete wavelet transform, singular value decomposition and DCST to better protect the security of watermarked image.
 
 # Working
-# - Embedding : 
+Embedding : 
 1. Host image is converted into a double type data and DCST compression is applied. 
 2. The Discreet Wavelet Transformation(DWT) (2 Dimensional) is carried out twice onto the compressed host image rendering LL2 , HL2, LH2 and HH2 sub bands. 
 3. The LL2 sub band is chosen for the proceeding operations that are to be performed on the image obtained in Step2. 
@@ -14,7 +14,7 @@ Digital watermarking is technique of embedding data into digital forms such as i
 
 Additive White Gaussian noise is applied onto the watermarked image to test for robustness.
 
-# - Extraction: 
+Extraction: 
 1. Possibly corrupt watermarked image is read for analysis. 
 2. DCST decomposition is applied.
 3. DCST coefficients are subdivided(same as in embedding procedure). 
